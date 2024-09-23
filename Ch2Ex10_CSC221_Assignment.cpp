@@ -28,11 +28,17 @@ using namespace std;
 
 int main()
 {
-    int gallonsGas = 15;
-    int milesCarCanDrive = 375;
-    int milesPerGallon = milesCarCanDrive / gallonsGas;
+    double gallonsGas;
+    double milesDriven;
+
+    cout << "Please enter the number of gallons used.\n";
+    cin >> gallonsGas;
+    cout << "Please enter the number of miles driven.\n";
+    cin >> milesDriven;
     
-    cout << "This car gets " << milesPerGallon << " miles per gallon of gasoline.\n";
+    double milesPerGallon = milesDriven / gallonsGas;
+
+    cout << "This car gets " << fixed << setprecision(1) << milesPerGallon << " miles per gallon of gasoline.\n";
 
     return 0;
 }
