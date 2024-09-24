@@ -1,5 +1,5 @@
 /*
-Title: Chapter 2 Exercise 10 - Miles per Gallon - Part A
+Title: Chapter 2 Exercise 10 - Miles per Gallon - Part B
 File Name : Chapter2Exercise10_Brion_Blais
 Programmer : Brion Blais
 Date : 09 / 2024
@@ -38,6 +38,7 @@ int main()
     
     double milesPerGallon = milesDriven / gallonsGas;
 
+    // Using fixed and setprecision to account for the user entering tenths normally present on gasoline pumps the odometer.
     cout << "This car gets " << fixed << setprecision(1) << milesPerGallon << " miles per gallon of gasoline.\n";
 
     return 0;
