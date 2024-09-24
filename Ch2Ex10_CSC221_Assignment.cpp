@@ -23,7 +23,6 @@ MPG = Miles Driven/Gallons of Gas Used
 */
 
 #include <iostream>
-#include <iomanip>
 using namespace std;
 
 int main()
